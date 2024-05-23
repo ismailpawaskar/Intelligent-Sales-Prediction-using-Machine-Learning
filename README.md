@@ -35,17 +35,34 @@ The primary objective is to implement and evaluate multiple machine learning mod
 2. **Feature Engineering**: Transform and encode categorical variables.
 3. **Data Splitting**: Split the dataset into training and testing sets.
 
-### Model Implementation
-1. **Linear Regression**: Implemented to understand the linear relationship between features and price.
-2. **Polynomial Regression**: Used to capture non-linear relationships.
-3. **Decision Tree Algorithm**: Implemented to handle non-linearity and interactions between features.
-4. **Random Forest Regressor**: Used for ensemble learning to improve predictive performance.
-5. **Gradient Boost Algorithm**: Implemented to boost the model's performance by adding a penalty term, resulting in the highest accuracy.
+## Model Implementation
+1. **Linear Regression**:
+   - Objective: Understand the linear relationship between features and price.
+   - Implementation: Use the scikit-learn library to fit a linear regression model to the training data.
+   
+2. **Polynomial Regression**:
+   - Objective: Capture non-linear relationships between features and price.
+   - Implementation: Use the PolynomialFeatures class from scikit-learn to create polynomial features and fit a linear regression model.
+   
+3. **Decision Tree Algorithm**:
+   - Objective: Handle non-linearity and interactions between features.
+   - Implementation: Use the DecisionTreeRegressor class from scikit-learn to fit a decision tree regression model.
+   
+4. **Random Forest Regressor**:
+   - Objective: Improve predictive performance through ensemble learning.
+   - Implementation: Use the RandomForestRegressor class from scikit-learn to fit a random forest regression model.
+   
+5. **Gradient Boost Algorithm**:
+   - Objective: Boost model performance by adding a penalty term for stability.
+   - Implementation: Use the GradientBoostingRegressor class from scikit-learn to fit a gradient boost regression model with a penalty term.
 
-### Model Evaluation
-1. **Visualization**: Visualize the behavior of characteristics using graphs and plots.
-2. **Model Stability**: Assess and enhance model stability by adding penalty terms.
-3. **Accuracy Measurement**: Evaluate model performance using metrics like Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R²).
+## Model Evaluation
+1. **Visualization**:
+   - Visualize the behavior of characteristics using graphs and plots such as scatter plots, histograms, and box plots.
+   
+2. **Model Stability**:
+   - Assess model stability by analyzing metrics like Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R²).
+   - Enhance model stability by adding penalty terms to models exhibiting instability.
 
 ## Results
 - The Gradient Boost Algorithm achieved the highest accuracy of around 98%.
@@ -76,4 +93,6 @@ The project demonstrates the effectiveness of various machine learning models in
     ```sh
     python evaluate_models.py
     ```
+
+
 
